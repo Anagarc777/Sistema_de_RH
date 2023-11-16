@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Inclusão de folhas de estilo -->
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css">
+</head>
+<body>
+    <!-- Título da página -->
+    <h1>Sistema de RH</h1>
+
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Formulário para adicionar funcionários -->
+        <div class="form">
+            <!-- Campos de entrada para o nome, cargo, salário e CPF do funcionário -->
+            <input type="text" id="nome" placeholder="Nome">
+            <input type="text" id="cargo" placeholder="Cargo">
+            <input type="number" id="salario" placeholder="Salário">
+            <input type="text" id="cpf" placeholder="CPF">
+            <!-- Botão para acionar a função de adicionar funcionário -->
+            <button onclick="adicionarFuncionario()">Adicionar</button>
+        </div>
+
+        <!-- Área para exibir a lista de funcionários -->
+        <div class="funcionarios">
+            <!-- Lista não ordenada para exibir os funcionários -->
+            <ul id="lista-funcionarios">
+            </ul>
+        </div>
+
+        <!-- Botão para baixar um arquivo CSV (a função não está presente no código JavaScript fornecido) -->
+        <button onclick="downloadCSV()">Adicionar</button>
+    </div>
+
+    <!-- Inclusão do script JavaScript -->
+    <script src="JS/index.js"></script>
+</body>
+</html>
+
+
